@@ -1,0 +1,152 @@
+.leaf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden; /* Ensures the rotated image doesn't overflow out of the leaf */
+  	
+}
+
+#leaf-1 .leaf-image {
+    width: 40%;
+    height: 40%;
+    background-size: contain;
+    background-position: bottom;
+  	background-repeat: no-repeat;
+		position: absolute;
+  	top: 30%;
+ 	 	left: 25%;
+    transform: rotate(-45deg); /* Rotate the image to counteract the existing rotation */
+}
+#leaf-1 .leaf-overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    transform: translate(-50%, -50%) rotate(-45deg); /* Rotate the overlay text as well */
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    pointer-events: none;
+}
+
+#leaf-2 .leaf-image {
+    width: 40%;
+    height: 35%;
+    background-size: contain;
+    background-position: bottom;
+  	background-repeat: no-repeat;
+		position: absolute;
+  	top: 50%;
+ 	 	left: 30%;
+    transform: rotate(-105deg); /* Rotate the image to counteract the existing rotation */
+}
+#leaf-2 .leaf-overlay-text {
+    position: absolute;
+    top: 33%;
+    left: 34%;
+    transform: translate(-50%, -50%) rotate(-105deg); /* Rotate the overlay text as well */
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    pointer-events: none;
+}
+
+#leaf-3 .leaf-image {
+    width: 40%;
+    height: 35%;
+    background-size: contain;
+    background-position: bottom;
+  	background-repeat: no-repeat;
+		position: absolute;
+  	top: 50%;
+ 	 	left: 30%;
+    transform: rotate(-165deg); /* Rotate the image to counteract the existing rotation */
+}
+#leaf-3 .leaf-overlay-text {
+    position: absolute;
+    top: 33%;
+    left: 34%;
+    transform: translate(-50%, -50%) rotate(-165deg); /* Rotate the overlay text as well */
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    pointer-events: none;
+}
+
+#leaf-4 .leaf-image {
+    width: 50%;
+    height: 40%;
+    background-size: contain;
+    background-position: bottom;
+  	background-repeat: no-repeat;
+		position: absolute;
+  	top: 40%;
+ 	 	left: 25%;
+    transform: rotate(-225deg); /* Rotate the image to counteract the existing rotation */
+}
+
+#leaf-4 .leaf-overlay-text {
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    transform: translate(-50%, -50%) rotate(-225deg); /* Rotate the overlay text as well */
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    pointer-events: none;
+}
+
+#leaf-5 .leaf-image {
+    width: 50%;
+    height: 40%;
+    background-size: contain;
+    background-position: bottom;
+  	background-repeat: no-repeat;
+		position: absolute;
+  	top: 25%;
+ 	 	left: 25%;
+    transform: rotate(-285deg); /* Rotate the image to counteract the existing rotation */
+}
+#leaf-5 .leaf-overlay-text {
+    position: absolute;
+    top: 52%;
+    left: 23%;
+    transform: translate(-50%, -50%) rotate(-285deg); /* Rotate the overlay text as well */
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    pointer-events: none;
+}
+
+#leaf-6 .leaf-image {
+    width: 60%;
+    height: 60%;
+    background-size: contain;
+    background-position: bottom;
+  	background-repeat: no-repeat;
+		position: absolute;
+  	top: 17%;
+ 	 	left: 17%;
+    transform: rotate(-345deg); /* Rotate the image to counteract the existing rotation */
+}
+#leaf-6 .leaf-overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-345deg); /* Rotate the overlay text as well */
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    pointer-events: none;
+}
+
+/* Tablet and Mobile View */
+@media (max-width: 1024px) {
+  .leaf-image,
+  .leaf-overlay-text {
+    display: none; /* Hide images and text on mobile and tablet */
+  }
+
+  .leaf-mobile {
+    display: block; /* Ensure that only the mobile-specific elements show */
+  }
+}
